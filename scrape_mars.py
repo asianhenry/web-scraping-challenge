@@ -48,7 +48,8 @@ def scrape():
 
 
     #click the full image button
-    click1=browser.links.find_by_partial_text('FULL IMAGE').click()
+    click1=browser.find_by_css('a[class="button fancybox"]').click()
+    ##click1=browser.links.find_by_partial_text('FULL IMAGE').click()
 
 
     #click the more info button
